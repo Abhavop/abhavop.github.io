@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+   <title>Project | Made by OM</title>
+   <link rel="stylesheet" type="text/css" href ="style.css">
+   <link rel="icon" href='1.jpg' />
+</head>
+<body>
+
+  <header>
+   <a herf="#" class="logo">OM ANAND</a>
+   <ul>
+    <li><a herf="#" class="active">Home</a></li>
+    <li><a href="YOUR LINK HERE">About</li></a>
+    <li><a href="YOUR LINK HERE">Discord</li></a>
+    <li><a href="YOUR LINK HERE">Youtube</li></a>
+    <div class="cursor"></div>
+   </ul>
+  </header>
+  <section>
+    <img src="2021_iStock_LatestBGTrends_Hero.jpg.jpeg" id="mountains_behind">
+    <h2 id="text">Om Anand</h2>
+    <a href="#sec" id="btn">Explore</a>
+   </section>
+   <div class="sec" id="sec">
+     <h2>Project Details -</h2>
+     <p>Om Anand's Project, This Website is made by Om anand in HTML&CSS.</p>
+   </div>
+
+   <style type="text/css">
+    .sec { cursor:none; }
+   </style>
+
+   <script>
+     let text = document.getElementById('text');
+     let btn = document.getElementById('btn');
+     let header = document.querySelector('header');
+
+     window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      text.style.marginRight = value * 4 + 'px';
+      text.style.marginTop = value * 1.5 + 'px';
+      btn.style.marginTop = value * 1.5 + 'px';
+      header.style.top = value * 0.5 + 'px';
+     })
+   </script>
+   <div>
+     <script>
+      const cursor = document.querySelector('.cursor');
+      document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.pageX + 'px';
+        cursor.style.top = e.pageY + 'px';
+      })
+     </script>
+   </div>
+
+  </body>
+ </html>
